@@ -9,21 +9,24 @@
 $dark-mode: true;
 
 
+// text-color
+
+
 //Radius
 
 $border-radius-xl: 10px;
-$border-radius-lg:            .3rem;
+$border-radius-lg: .3rem;
 $border-radius-md: 6px;
-$border-radius-sm:            .2rem;
+$border-radius-sm: .2rem;
 $border-radius-xs: 4px;
-$border-radius:               .25rem;
+$border-radius: .25rem;
 
 
-$rounded-pill:                50rem !default;
+$rounded-pill: 50rem !default;
 
-$gray:            #404040; //var(--color-gray)
-$text-color:     #666d92; //var(--text-color)
-$light-gray:      #8C90A4; //var(--color-light)
+$gray: #404040; //var(--color-gray)
+$text-color: #666d92; //var(--text-color)
+$light-gray: #8C90A4; //var(--color-light)
 $light:$light-gray;
 
 // gray
@@ -34,24 +37,41 @@ $gray-3: #F5F5F5;
 $gray-4: #FDFDFD;
 $gray-5: #F2F2F2;
 
+// text-color
+$text-1: #1B212D;
+$text-2: #929EAE;
+$text-3: #78778B;
+$text-light: #FFFFFF;
+
+// darkish-color
+$dark-1: #201E34;
+$dark-2: #282541;
+$dark-bg: #1C1A2E;
+$dark-shade: #1E1C30;
+$key-black: #363A3F;
+
+
+
 //btn color
 
-$body-color:  var(--body-color);
+$body-color: var(--body-color);
 $text-light: #747474;
 $text-grey1: #404040;
 $text-grey2: #A0A0A0;
 $text-grey3: #5A5F7D;
 $footer-dark: #353b58;
 
-// theme color
+// main color
 
-$primary:         #8231D3;
-$secondary:       #5840FF;
-$success:         #01B81A;
-$info:            #00AAFF;
-$warning:         #FA8B0C;
-$danger:          #FF0F0F;
-$dark:            #0A0A0A;
+$primary: #C8EE44;
+$secondary: #29A073;
+$success: #19D076;
+$danger: #E5363D;
+
+
+$info: #00AAFF;
+$warning: #FA8B0C;
+$dark: #0A0A0A;
 
 $infos:#00E4EC;
 $warnings:#FFBB00;
@@ -93,15 +113,15 @@ $black:var(--color-dark);
 $other-colors: ("footer-dark": $footer-dark,
 );
 
-$hover-colors: ("primary": #6726A8,
-  "secondary": #3520C8,
-  "success": #0D811D,
+$hover-colors: ("primary": #C8EE44,
+  "secondary": #29A073,
+  "success": #19D076,
+  "danger": #E5363D,
+
   "info": #0787C7,
-  "warning": #D9790A,
-  "danger": #CB0000,
+  "warning": #D9790A, 
   "dark": #272525,
-  "gray": #585858
-);
+  "gray": #585858);
 
 // border color
 $border-color: var(--border-color);
@@ -189,19 +209,18 @@ $box-shadow-lg: 0 0.67rem 0.67rem rgba($box-shadow-color, 0.1);
 
 // font
 $font-size-base: 1rem;
-$font-family-base: 'Jost', sans-serif;
+$font-family-base: 'Kumbh Sans', sans-serif;
+
 
 // display text
 $display1-size: 3rem; // 48px
 $display2-size: 2.5rem; // 40px
 $display3-size: 2.25rem; // 36px
 $display4-size: 1.875rem; // 30px
-$display-font-sizes: (
-  1: $display1-size,
+$display-font-sizes: (1: $display1-size,
   2: $display2-size,
   3: $display3-size,
-  4: $display4-size
-);
+  4: $display4-size);
 
 $display-font-weight: 500;
 
@@ -291,7 +310,7 @@ $headings-margin-bottom: 0;
 $headings-color: var(--color-dark);
 $headings-font-weight: 600;
 
-$headings-font-family:'Jost', sans-serif;
+$headings-font-family:'Kumbh Sans', sans-serif;
 
 // alerts
 $alert-bg-level: -10.66;

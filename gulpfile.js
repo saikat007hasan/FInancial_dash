@@ -20,7 +20,7 @@ var reload = serve.reload;
 gulp.task("browser-sync", function (done) {
   serve.init({
     server: "./",
-    startPath: "./webpage/index.html",
+    startPath: "./webpage",
 
     // After it browser running [File path set]
     //    browser: 'chrome',
@@ -72,7 +72,7 @@ gulp.task("js", () => {
       'assets/js/popper.min.js',
       'assets/js/bootstrap.min.js',
       'assets/js/select2.min.js',
-      'assets/js/main-js/main.js',
+      'assets/js/main-js/*.js',
       'assets/js/other-js/*.js',
 
     ])
