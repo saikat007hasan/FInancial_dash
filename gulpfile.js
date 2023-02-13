@@ -26,9 +26,9 @@ gulp.task("browser-sync", function (done) {
     //    browser: 'chrome',
     host: 'localhost',
     livereload: true,
-    port: 3000,
+    port: 3003,
     open: true,
-    // tunnel: true
+    tunnel: false,
   });
   gulp.watch(["./**/*.html"]).on("change", reload); // [File path set]
   done();
