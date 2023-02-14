@@ -30,8 +30,7 @@ class PopperObject {
       placement: "right",
       strategy: "fixed",
       resize: true,
-      modifiers: [
-        {
+      modifiers: [{
           name: "computeStyles",
           options: {
             adaptive: false
@@ -112,7 +111,9 @@ class Poppers {
 }
 
 const slideUp = (target, duration = ANIMATION_DURATION) => {
-  const { parentElement } = target;
+  const {
+    parentElement
+  } = target;
   parentElement.classList.remove("open");
   target.style.transitionProperty = "height, margin, padding";
   target.style.transitionDuration = `${duration}ms`;
@@ -138,10 +139,14 @@ const slideUp = (target, duration = ANIMATION_DURATION) => {
   }, duration);
 };
 const slideDown = (target, duration = ANIMATION_DURATION) => {
-  const { parentElement } = target;
+  const {
+    parentElement
+  } = target;
   parentElement.classList.add("open");
   target.style.removeProperty("display");
-  let { display } = window.getComputedStyle(target);
+  let {
+    display
+  } = window.getComputedStyle(target);
   if (display === "none") display = "block";
   target.style.display = display;
   const height = target.offsetHeight;
@@ -232,12 +237,12 @@ FIRST_SUB_MENUS_BTN.forEach((element) => {
       const parentMenu = element.closest(".menu.open-current-submenu");
       if (parentMenu)
         parentMenu
-          .querySelectorAll(":scope > ul > .menu-item.sub-menu > a")
-          .forEach(
-            (el) =>
-              window.getComputedStyle(el.nextElementSibling).display !==
-                "none" && slideUp(el.nextElementSibling)
-          );
+        .querySelectorAll(":scope > ul > .menu-item.sub-menu > a")
+        .forEach(
+          (el) =>
+          window.getComputedStyle(el.nextElementSibling).display !==
+          "none" && slideUp(el.nextElementSibling)
+        );
       slideToggle(element.nextElementSibling);
     }
   });
@@ -272,10 +277,10 @@ const disableDarkMode = () => {
   console.log('null');
 }
 
-toggleBtn.addEventListener('click', ()=>{
+toggleBtn.addEventListener('click', () => {
   darkMode = localStorage.getItem('darkMode');
-  
-  if(darkMode !== 'enabled'){
+
+  if (darkMode !== 'enabled') {
     enableDarkMode();
   } else {
     disableDarkMode();
@@ -284,4 +289,61 @@ toggleBtn.addEventListener('click', ()=>{
 
 
 
-let wholePage = document.getElementById('has-sidebar')
+
+
+
+//////////////// Hexa-dash-file//////////////
+
+
+let Dashboard = (() => {
+	let global = {
+		tooltipOptions: {
+			placement: "right"
+		},
+		menuClass: ".c-menu"
+	};
+
+	let menuChangeActive = el => {
+		let hasSubmenu = ($(el).hasClass("has-submenu"));
+		$(global.menuClass + " .is-active").removeClass("is-active");
+		$(el).addClass("is-active");
+		
+		// if (hasSubmenu) {
+		// 	$(el).find("ul").slideDown();
+		// }
+	};
+
+	let sidebarChangeWidth = () => {
+		let $menuItemsTitle = $("li .menu-item__title");
+
+		$("body").toggleClass("sidebar-is-reduced sidebar-is-expanded");
+		$(".hamburger-toggle").toggleClass("is-opened");
+		
+		if ($("body").hasClass("sidebar-is-expanded")) {
+			$('[data-toggle="tooltip"]').tooltip("destroy");
+		} else {
+			$('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
+		}
+		
+	};
+
+	return {
+		init: () => {
+			$(".js-hamburger").on("click", sidebarChangeWidth);
+
+			$(".js-menu li").on("click", e => {
+				menuChangeActive(e.currentTarget);
+			});
+
+			$('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
+		}
+	};
+})();
+
+Dashboard.init();
+
+
+
+
+
+

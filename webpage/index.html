@@ -5,23 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Financial-dash</title>
-  <link rel="icon" href="../assets/icons/logo-top.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <!-- Box icon CSS   -->
+  <!-- title -->
+  <title>FinancialDash</title>
+
+  <!-- tab-logo -->
+
+  <link rel="icon" href="../assets/icons/logo-top.png" type="image/x-icon">
+
+
+
+  <!--  CSS  -->
   <link href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://vjs.zencdn.net/5-unsafe/video-js.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
-  <link rel="stylesheet" href="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <!-- main-css -->
+  <!-- Main-Css -->
   <link rel="stylesheet" type="text/css" href="../public/css/app.min.css">
 </head>
 
@@ -30,58 +30,46 @@
 
   <!-- Side-Nav -->
 
-  <div class="layout has-sidebar fixed-sidebar fixed-header">
+  <div class="layout sidebar-wrapper has-sidebar fixed-sidebar fixed-header">
     <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
       <a id="btn-collapse" class="sidebar-collapser"><i class="bx bxs-chevrons-left"></i></a>
-      <!-- <div class="image-wrapper">
-        <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
-      </div> -->
       <div class="sidebar-layout">
         <div class="sidebar-header">
-          <div class="pro-sidebar-logo">
-            <div>P</div>
-            <h5>Pro Sidebar</h5>
-          </div>
+          <img src="../assets/img/Logo.svg" alt="33">
+          <h3>Flyr</h3>
         </div>
+        
         <div class="sidebar-content">
-          <nav class="menu open-current-submenu">
-            <ul>
-              <!-- <li class="menu-header" style="padding-top: 20px"><span> EXTRA </span></li> -->
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-icon">
-                    <i class="ri-book-2-fill"></i>
-                  </span>
-                  <span class="menu-title">Documentation</span>              
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-icon">
-                    <i class="ri-calendar-fill"></i>
-                  </span>
-                  <span class="menu-title">Calendar</span>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#">
-                  <span class="menu-icon">
-                    <i class="ri-service-fill"></i>
-                  </span>
-                  <span class="menu-title">Examples</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <a href="#" class="sidenav_link active">
+            <i class='bx bx-folder'></i>
+            <h3>Projects</h3>
+          </a>
+          
+          <a href="#" class="sidenav_link">
+            <i class='bx bx-briefcase'></i>
+            <h3>My Work</h3>
+          </a>
+          
+          <a href="#" class="sidenav_link">
+            <i class='bx bx-file'></i>
+            <h3>Files</h3>
+          </a>
+          
+          <a href="#" class="sidenav_link">
+            <i class='bx bx-calendar'></i>
+            <h3>Calendar</h3>
+            <button disabled class="external_link">
+              <i class='bx bx-link-external' ></i>
+            </button> 
+          </a>
+          
         </div>
         <div class="sidebar-footer">
-          <li class="menu-item">
-            <a href="#">
-              <span class="menu-icon">
-                <i class="ri-service-fill" style="font-family: remixicon, Bangla198, sans-serif;"></i>
-              </span>
-              <span class="menu-title">Examples</span>
-            </a>
+          <a href="#" class="sidenav_link">
+            <i class='bx bx-rocket'></i>
+            <h3>Special Promotion</h3>
+          </a>
+
           </li>
         </div>
       </div>
@@ -90,7 +78,7 @@
     <div class="layout">
       <header>
         <div class="text">
-          <h2>Projects</h2> 
+          <h2>Projects</h2>
         </div>
         <div>
           <button id="theme_switch">
@@ -103,8 +91,30 @@
           <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
             <i class="ri-menu-line ri-xl"></i>
           </a>
-          <h1 style="margin-bottom: 0">Pro Sidebar</h1>
-          
+
+
+          <div class="container">
+
+            <div class="card-wrapper">
+              <div class="map">
+                <img src="https://i.postimg.cc/bYKK0BxY/map.png" class="card-map" alt="map">
+              </div>
+              <h2 class="card-type">Mastercard</h2>
+              <div class="chip">
+                <img src="https://i.postimg.cc/VsCYcM46/chip.png" class="card-chip" alt="card-chip">
+              </div>
+              <div class="card-left">
+                <h3 class="card-bin-number">9877 3423 4323 1213</h3>
+                <p class="card-date">valid through <span>09/2025</span></p>
+                <p class="card-owner">Ahmad Sina Saeedi</p>
+              </div>
+              <div class="card-circle-right">
+                <div class="red-circle"></div>
+                <div class="orange-circle"></div>
+              </div>
+            </div>
+          </div>
+
       </main>
       <div class="overlay"></div>
     </div>
@@ -116,11 +126,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.2/chart.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
   <script src="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <!-- <script type="module" src="module.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
