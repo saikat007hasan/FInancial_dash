@@ -14,8 +14,11 @@
 :root {
 
     --accent-clr: #FFFFFF;
+    --body: #FFFFFF;
     --accent-dark: #FAFAFA;
-    --accent-light: rgba(100, 99, 99, 0.1);
+    --sidebar-bg: #FAFAFA;
+    --accent-light: rgba(165, 169, 172, 0.1);
+    --bg-light: #333333;
     --text: black;
 
 }
@@ -38,7 +41,7 @@
         flex-direction: column;
         position: relative;
         background-color: var(--accent-clr);
-        transition: background-color 0.4s ease-in-out;
+        transition: background-color 0.7s ease-in-out;
     }
 
     .sidebar {
@@ -54,7 +57,7 @@
             box-shadow: 1px 1px 4px var(--accent-clr);
             top: 72px;
             left: 228px;
-            transition: 250ms ease-out;
+            transition: .5s ease-out;
             background-color: var(--accent-dark);
             border-radius: 99px;
             display: flex;
@@ -165,7 +168,7 @@
     .sidebar {
         width: 250px;
         min-width: 250px;
-        transition: var(--transition);
+        transition: .5s ease-out;
     }
 
     header {
