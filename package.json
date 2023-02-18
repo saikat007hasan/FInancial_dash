@@ -1,4 +1,3 @@
-
 {
   "dependencies": {
     "autoprefixer": "^10.4.4",
@@ -14,6 +13,23 @@
     "gulp-sass": "^5.1.0",
     "postcss": "^8.4.12",
     "sass": "^1.45.1"
-  }
+  },
+  "name": "financial-dash",
+  "description": "Installation Steps >",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saikat007hasan/FInancial_dash.git"
+  },
+  "author": "saikat_sovware",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saikat007hasan/FInancial_dash/issues"
+  },
+  "homepage": "https://github.com/saikat007hasan/FInancial_dash#readme"
 }
-

@@ -285,62 +285,41 @@ toggleBtn.addEventListener('click', () => {
   } else {
     disableDarkMode();
   }
-})
+});
+
+// image-dark-light
+
+// function changeImage() {
+//   if (document.getElementById("imgClickAndChange").src == "http://www.userinterfaceicons.com/80x80/minimize.png"){
+//       document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/maximize.png";
+//   } else {
+//       document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/minimize.png";
+//   }
+// }
 
 
+//in html
+{/* <img id="img" data-image="user1" src="/assets/user1.jpg" onclick="change_image()" /> */}
 
-
-
+//in javascript
+// const img = document.getElementById('img');
+// const change_image = function() {
+//   if (img.dataset.image == "user1") {
+//   	img.src = "/assets/user2.jpg";
+//     img.dataset.image = "user2";
+//     return
+//   };
+  
+//   if (img.dataset.image == "user2") {
+//   	img.src = "/assets/user1.jpg";
+//     img.dataset.image = "user1";
+//     return
+//   };
+// };
 
 //////////////// Hexa-dash-file//////////////
 
 
-let Dashboard = (() => {
-	let global = {
-		tooltipOptions: {
-			placement: "right"
-		},
-		menuClass: ".c-menu"
-	};
-
-	let menuChangeActive = el => {
-		let hasSubmenu = ($(el).hasClass("has-submenu"));
-		$(global.menuClass + " .is-active").removeClass("is-active");
-		$(el).addClass("is-active");
-		
-		// if (hasSubmenu) {
-		// 	$(el).find("ul").slideDown();
-		// }
-	};
-
-	let sidebarChangeWidth = () => {
-		let $menuItemsTitle = $("li .menu-item__title");
-
-		$("body").toggleClass("sidebar-is-reduced sidebar-is-expanded");
-		$(".hamburger-toggle").toggleClass("is-opened");
-		
-		if ($("body").hasClass("sidebar-is-expanded")) {
-			$('[data-toggle="tooltip"]').tooltip("destroy");
-		} else {
-			$('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
-		}
-		
-	};
-
-	return {
-		init: () => {
-			$(".js-hamburger").on("click", sidebarChangeWidth);
-
-			$(".js-menu li").on("click", e => {
-				menuChangeActive(e.currentTarget);
-			});
-
-			$('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
-		}
-	};
-})();
-
-Dashboard.init();
 
 
 

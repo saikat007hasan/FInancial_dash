@@ -26,7 +26,7 @@ gulp.task("browser-sync", function (done) {
     //    browser: 'chrome',
     host: 'localhost',
     livereload: true,
-    port: 3003,
+    port: 3001,
     open: true,
     tunnel: false,
   });

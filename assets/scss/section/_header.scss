@@ -1,0 +1,65 @@
+@import "../general/general";
+
+// Header+content --Area
+
+
+// Header
+
+h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+
+#theme_switch {
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+
+.bx-sun {
+    color: var(--text);
+    padding-left: 8px;
+}
+
+main {
+    padding-inline: 32px;
+
+    .sidebar-toggler {
+        position: fixed;
+        right: 30px;
+        top: 15px;
+    }
+}
+
+
+
+.collapsed #sidenav {
+    width: 48px;
+    transition: 250ms ease-out;
+}
+
+.collapsed #nav_collapse_btn {
+    left: 44px;
+    transition: 250ms ease-out;
+}
+
+.collapsed .external_link {
+    display: none;
+}
+
+
+.collapsed h3 {
+    display: none;
+}
