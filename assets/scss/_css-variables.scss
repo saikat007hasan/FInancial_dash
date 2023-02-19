@@ -1,6 +1,11 @@
 /*------------------------------------*\
     #-CSS Variables
 \*------------------------------------*/
+
+
+
+
+
 :root {
 
     
@@ -18,7 +23,7 @@
     --header-bg: white;
     --sidebar-bg: #FAFAFA;
     --main-content: var(--contents-bg);
-    --header-bg: white;
+    --header-bg: white;                                                                    
     --bg-light: #333333;
     --logo-wrapper-bg: white;
 
@@ -48,6 +53,9 @@
     --gray-3: #F5F5F5;
     --gray-4: #FDFDFD;
     --gray-5: #F2F2F2;
+    --gray-6: #FFF4FE;
+    --gray-7: #363A3F;
+    --gary-8: #3D3D3C;
 
     //text color
 
@@ -76,6 +84,7 @@
 
     --dark-1: #201E34;
     --dark-2: #282541;
+    --dark-3: #292642;
     --dark-bg: #1C1A2E;
     --dark-shade: #1E1C30;
     --key-black: #363A3F;
@@ -321,7 +330,7 @@
     --color-warning-rgba: 250, 139, 12;
     --color-danger-rgba: 255, 15, 15;
     --color-dark-rgba: 9, 14, 48;
-    --color-primary-rgba-shadow: rgba(var(--color-primary-rgba), 0.20);
+    --color-rgba-shadow: rgba(var(--color-primary-rgba), 0.20);
 
 
     //Side Color

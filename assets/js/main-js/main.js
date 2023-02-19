@@ -320,52 +320,42 @@ toggleBtn.addEventListener('click', () => {
 //////////////// Hexa-dash-file//////////////
 
 
-let Dashboard = (() => {
-	let global = {
-		tooltipOptions: {
-			placement: "right"
-		},
-		menuClass: ".c-menu"
-	};
 
-	let menuChangeActive = el => {
-		let hasSubmenu = ($(el).hasClass("has-submenu"));
-		$(global.menuClass + " .is-active").removeClass("is-active");
-		$(el).addClass("is-active");
-		
-		// if (hasSubmenu) {
-		// 	$(el).find("ul").slideDown();
-		// }
-	};
 
-	let sidebarChangeWidth = () => {
-		let $menuItemsTitle = $("li .menu-item__title");
 
-		$("body").toggleClass("sidebar-is-reduced sidebar-is-expanded");
-		$(".hamburger-toggle").toggleClass("is-opened");
-		
-		if ($("body").hasClass("sidebar-is-expanded")) {
-			$('[data-toggle="tooltip"]').tooltip("destroy");
-		} else {
-			$('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
-		}
-		
-	};
+var click = document.querySelectorAll('div button');
+var menu = document.querySelector('#st-container');
+var pusher = document.querySelector('.st-pusher');
+// to store the corresponding effect
+var effect;
 
-	return {
-		init: () => {
-			$(".js-hamburger").on("click", sidebarChangeWidth);
+// adding a click event to all the buttons
+for (var i = 0; i < click.length; i++) {
+  click[i].addEventListener('click', addClass)
+}
 
-			$(".js-menu li").on("click", e => {
-				menuChangeActive(e.currentTarget);
-			});
+pusher.addEventListener('click', closeMenu);
 
-			$('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
-		}
-	};
-})();
 
-Dashboard.init();
+
+function addClass(e) {
+  // to get the correct effect
+  effect = e.target.getAttribute('data-effect');
+  // adding the effects
+  menu.classList.toggle(effect);
+  menu.classList.toggle('st-menu-open');
+  
+  // console.log(e.target.getAttribute('data-effect'));
+}
+
+function closeMenu(el) {
+  // if the click target has this class then we close the menu by removing all the classes
+  if (el.target.classList.contains('st-pusher')) {
+    menu.classList.toggle(effect);
+    menu.classList.toggle('st-menu-open');
+    // console.log(el.target);
+  } 
+}
 
 
 
