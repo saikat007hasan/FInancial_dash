@@ -21,6 +21,7 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
   <!-- Main-Css -->
   <link rel="stylesheet" type="text/css" href="../public/css/app.min.css">
@@ -53,27 +54,27 @@
           </div>
         </header>
 
-        <!-- content -->
+        <!--Nav--- content -->
 
         <div class="sidebar-content p-4 pt-0">
           <a href="index.html" class="sidenav_link active">
-            <img class="svg" src="../assets/icons/Dashboard.svg" alt="icon">
+            <img class="svg  nav-icon" src="../assets/img/svg/Dashboard.svg" alt="icon">
             <h3>Dashboard</h3>
           </a>
           <a href="transactions.html" class="sidenav_link">
-            <img class="svg" src="../assets/icons/Transactions.svg" alt="icon">
+            <img class="svg" src="../assets/img/svg/Transactions.svg" alt="icon">
             <h3>Transactions</h3>
           </a>
           <a href="invoice.html" class="sidenav_link">
-            <img class="svg" src="../assets/icons/side-ico-3.svg" alt="icon">
+            <img class="svg" src="../assets/img/svg/Invoices.svg" alt="icon">
             <h3>Invoices</h3>
           </a>
           <a href="#" class="sidenav_link">
-            <img class="svg" src="../assets/icons/My Wallets.svg" alt="icon">
+            <img class="svg" src="../assets/img/svg/My Wallets.svg" alt="icon">
             <h3>My Wallets</h3>
           </a>
           <a href="#" class="sidenav_link">
-            <img class="svg" src="../assets/icons/Settings.svg" alt="icon">
+            <img class="svg " src="../assets/img/svg/Settings.svg" alt="icon">
             <h3>Settings</h3>
             <!-- <button disabled class="external_link">
               <i class='bx bx-link-external'></i>
@@ -85,11 +86,20 @@
 
         <div class="sidebar-footer p-4">
           <a href="#" class="sidenav_link">
-            <img class="svg" src="../assets/icons/Help.svg" alt="icon">
+            <img class="svg" src="../assets/img/svg/Help.svg" alt="icon">
             <h3>Help</h3>
           </a>
           <a href="#" class="sidenav_link">
-            <img class="svg" src="../assets/icons/Logout (1).svg" alt="icon">
+            <!-- <img class="svg" src="../assets/img/svg/Logout (1).svg" alt="icon"> -->
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path id="svg"
+                d="M6.56491 10.0584C6.56491 9.71675 6.84824 9.43341 7.18991 9.43341H11.7566V2.38341C11.7483 1.98341 11.4316 1.66675 11.0316 1.66675C6.12324 1.66675 2.69824 5.09175 2.69824 10.0001C2.69824 14.9084 6.12324 18.3334 11.0316 18.3334C11.4233 18.3334 11.7483 18.0167 11.7483 17.6167V10.6751H7.18991C6.83991 10.6834 6.56491 10.4001 6.56491 10.0584Z"
+                fill="#929EAE" />
+              <path
+                d="M17.1176 9.61683L14.751 7.2418C14.5093 7.00013 14.1093 7.00013 13.8676 7.2418C13.626 7.48346 13.626 7.88346 13.8676 8.12513L15.1676 9.42516H11.751V10.6752H15.1593L13.8593 11.9752C13.6176 12.2168 13.6176 12.6168 13.8593 12.8585C13.9843 12.9835 14.1426 13.0418 14.301 13.0418C14.4593 13.0418 14.6176 12.9835 14.7426 12.8585L17.1093 10.4835C17.3593 10.2502 17.3593 9.8585 17.1176 9.61683Z"
+                fill="#929EAE" />
+            </svg>
+
             <h3>Logout</h3>
           </a>
         </div>
@@ -105,47 +115,123 @@
       <!-- header -->
 
       <header>
-        <div class="text">
+        <!-- header-left -->
+        <div class="header__left d-flex justify-content-center align-items-center">
           <h2>Dashboard</h2>
-        </div>
-        <div>
-          <button id="theme_switch">
+          <button id="theme_switch" class="mb-2">
             <i class='bx bx-sun'></i>
           </button>
+        </div>
+        <!-- header-right -->
+        <div class="header__right">
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="#" class="nav-link text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.1892 14.0608L19.0592 12.1808C18.8092 11.7708 18.5892 10.9808 18.5892 10.5008V8.63078C18.5892 5.00078 15.6392 2.05078 12.0192 2.05078C8.38923 2.06078 5.43923 5.00078 5.43923 8.63078V10.4908C5.43923 10.9708 5.21923 11.7608 4.97923 12.1708L3.84923 14.0508C3.41923 14.7808 3.31923 15.6108 3.58923 16.3308C3.85923 17.0608 4.46923 17.6408 5.26923 17.9008C6.34923 18.2608 7.43923 18.5208 8.54923 18.7108C8.65923 18.7308 8.76923 18.7408 8.87923 18.7608C9.01923 18.7808 9.16923 18.8008 9.31923 18.8208C9.57923 18.8608 9.83923 18.8908 10.1092 18.9108C10.7392 18.9708 11.3792 19.0008 12.0192 19.0008C12.6492 19.0008 13.2792 18.9708 13.8992 18.9108C14.1292 18.8908 14.3592 18.8708 14.5792 18.8408C14.7592 18.8208 14.9392 18.8008 15.1192 18.7708C15.2292 18.7608 15.3392 18.7408 15.4492 18.7208C16.5692 18.5408 17.6792 18.2608 18.7592 17.9008C19.5292 17.6408 20.1192 17.0608 20.3992 16.3208C20.6792 15.5708 20.5992 14.7508 20.1892 14.0608ZM12.7492 10.0008C12.7492 10.4208 12.4092 10.7608 11.9892 10.7608C11.5692 10.7608 11.2292 10.4208 11.2292 10.0008V6.90078C11.2292 6.48078 11.5692 6.14078 11.9892 6.14078C12.4092 6.14078 12.7492 6.48078 12.7492 6.90078V10.0008ZM14.8297 20.01C14.4097 21.17 13.2997 22 11.9997 22C11.2097 22 10.4297 21.68 9.87969 21.11C9.55969 20.81 9.31969 20.41 9.17969 20C9.30969 20.02 9.43969 20.03 9.57969 20.05C9.80969 20.08 10.0497 20.11 10.2897 20.13C10.8597 20.18 11.4397 20.21 12.0197 20.21C12.5897 20.21 13.1597 20.18 13.7197 20.13C13.9297 20.11 14.1397 20.1 14.3397 20.07C14.4997 20.05 14.6597 20.03 14.8297 20.01Z"
+                    fill="#929EAE" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link dropdown-toggle toggle-change show text-primary" href="#" id="navbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="true" class="ps-4">
+                <i class="fas fa-user pe-2"></i>
+                Mahfuzul Nabil
+              </a>
+            </li>
+          </ul>
         </div>
       </header>
 
       <!-- main-content -->
 
-      <main class="content">
+      <main class="main-content">
         <div>
           <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
             <i class="ri-menu-line ri-xl"></i>
           </a>
-              <!-- main-container -->
-          <div class="container">
-            <!-- <div class="card-wrapper">
-              <div class="map">
-                <img src="https://i.postimg.cc/bYKK0BxY/map.png" class="card-map" alt="map">
-              </div>
-              <h2 class="card-type">Mastercard</h2>
-              <div class="chip">
-                <img src="https://i.postimg.cc/VsCYcM46/chip.png" class="card-chip" alt="card-chip">
-              </div>
-              <div class="card-left">
-                <h3 class="card-bin-number">9877 3423 4323 1213</h3>
-                <p class="card-date">valid through <span>09/2025</span></p>
-                <p class="card-owner">Ahmad Sina Saeedi</p>
-              </div>
-              <div class="card-circle-right">
-                <div class="red-circle"></div>
-                <div class="orange-circle"></div>
-              </div>
-            </div> -->
+          <!-- main-container -->
+          <div class="container-fluid">           
+              <div class="col-xxl-9">
+                <div class="row">
+                  <div class="col-xxl-4 col-xl-4 col-sm-6 col-ssm-12 mb-25">
+                    <div class="ap-po-details">
+                      <div class="overview-content w-100">
+                        <div class="ap-po-details-content">
+                          <div class="ap-po-details__titlebar">
+                            <p>Total Course</p>
+                            <div class="numbers">07</div>
+                          </div>
+                          <div class="ap-po-details__icon-area">
+                            <div class="color-primary ap-po-details__double-icon">
+                              <i class="uil uil-book-open"></i>
+                              <div class="low-opacity">
+                                <i class="uil uil-book-open"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-sm-6 col-ssm-12 mb-25">
+                    <div class="ap-po-details">
+                      <div class="overview-content w-100">
+                        <div class="ap-po-details-content">
+                          <div class="ap-po-details__titlebar">
+                            <p>Completed Course</p>
+                            <div class="numbers">05</div>
+                          </div>
+                          <div class="ap-po-details__icon-area">
+                            <div class="color-info ap-po-details__double-icon">
+                              <i class="uil uil-trophy"></i>
+                              <div class="low-opacity">
+                                <i class="uil uil-trophy"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-sm-6 col-ssm-12 mb-25">
+                    <div class="ap-po-details">
+                      <div class="overview-content w-100">
+                        <div class="ap-po-details-content">
+                          <div class="ap-po-details__titlebar">
+                            <p>Certificates Achievement</p>
+                            <div class="numbers">06</div>
+                          </div>
+                          <div class="ap-po-details__icon-area">
+                            <div class="color-success ap-po-details__double-icon">
+                              <i class="uil uil-shield-check"></i>
+                              <div class="low-opacity">
+                                <i class="uil uil-shield-check"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                 
+                </div>               
+              </div>           
           </div>
-      </main>
-      <div class="overlay"></div>
-    </div>
+        </div>       
+    </main>
+    <div class="overlay"></div>
+  </div>
   </div>
 
 

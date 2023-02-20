@@ -11,71 +11,7 @@
 //   }
 
 
-:root {
 
-    --accent-clr: #FFFFFF;
-    --body: #FFFFFF;
-    --accent-dark: #FAFAFA;
-    --accent-light: rgba(165, 169, 172, 0.1);
-    --bg-light: #333333;
-    --text: black;
-
-    --clr-fixed: black;
-    --bg-main: #FFFFFF;
-    --color-primary: #C8EE44;
-    --color-lighten: #929EAE;
-    --text-1: #1B212D;
-    --text-2: #929EAE;
-    --text: black;
-    --sidebar-bg: #FAFAFA;
-    --color-secondary: #29A073;
-    --gray-2: #F8F8F8;
-    --gray-3: #F5F5F5;
-    --text-light: #FFFFFF;
-    --gray-6: #FFF4FE;
-    --gray-7: #363A3F;
-    --color-dark: #000000;
-    --scrollbarBG: #C8EE44;
-    --thumbBG: rgba(114, 129, 146, 0.3);
-    --color-bg-opacity: rgb(var(--color-primary-rgba), .10);
-    --box-shadow-color-rgba: 146, 153, 184;
-    --box-shadow-collapse: rgb(var(146, 153, 184), .50) --border-light: rgba(165, 169, 172, 0.1);
-    --border-light: rgba(12, 11, 12, 0.1);
-
-
-
-}
-
-.dark_mode {
-    --accent-clr: #131313;
-    --accent-dark: #000000;
-    --accent-light: rgba(155, 155, 155, .1);
-    --text: rgb(255, 255, 255);
-
-    --clr-fixed: black;
-    --bg-main: #180e35;
-    --text-1: #FFFFFF;
-    --text-2: #929EAE;
-    --color-primary: #C8EE44;
-    --text-light: #FFFFFF;
-    --sidebar-bg: #252246;
-    --text-5: #1B212D;
-    --dark-1: #201E34;
-    --text-3: #78778B;
-    --dark-1: #201E34;
-    --dark-2: #282541;
-    --color-secondary: #29A073;
-    --dark-bg: #1C1A2E;
-    --bg-white: #ffffff;
-    --bg-linear: #22202C;
-    --dark-3: #292642;
-    --gray-3: #F5F5F5;
-    --color-liner: #2E2B4A;
-    --border-light: rgba(207, 213, 219, 0.829);
-
-
-
-}
 
 
 
@@ -135,7 +71,7 @@
         .sidebar-footer {
 
             .sidenav_link {
-                padding: 10px 6px;
+                padding: 10px 9px;
             }
         }
     }
@@ -192,15 +128,11 @@
     }
 
     .sidenav_link:hover>h3,
-    .sidenav_link:hover img {
-        color: var(--text-2);
+    .sidenav_link:hover>img {
+        fill: var(--clr-fixed);
+        color: var(--clr-fixed);
 
-        svg {
-            path {
-                fill: var(--text) !important;
-                color: var(--text) !important;
-            }
-        }
+        
     }
 
     a {

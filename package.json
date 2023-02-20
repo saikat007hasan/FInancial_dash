@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "autoprefixer": "^10.4.4",
+    "bootstrap-icons": "^1.10.3",
     "browser-sync": "^2.27.9",
     "cssnano": "^5.1.7",
     "gulp": "^4.0.2",
@@ -18,7 +19,6 @@
   "description": "Installation Steps >",
   "version": "1.0.0",
   "main": "gulpfile.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

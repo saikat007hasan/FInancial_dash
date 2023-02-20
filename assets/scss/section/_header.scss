@@ -11,25 +11,25 @@ h2 {
     font-size: 25px;
     line-height: 31px;
     margin-bottom: 12px;
-    color: var(--text);
+    color: var(--text-1);
 }
-
 
 #theme_switch {
     background-color: transparent;
     border: none;
-    color: var(--text);
+    color: var(--text-1);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border-radius: 8px;
-    padding: 4px;
+    padding: 0px 20px;
+   
 }
 
 
 .bx-sun {
-    color: var(--text);
+    color: var(--text-1);
     padding-left: 8px;
 }
 

@@ -260,6 +260,9 @@ INNER_SUB_MENUS_BTN.forEach((element) => {
 
 
 
+
+
+
 //Creating the dark/light mode toggle
 
 let darkMode = localStorage.getItem('dark_mode');
@@ -356,6 +359,15 @@ function closeMenu(el) {
     // console.log(el.target);
   } 
 }
+
+
+
+// jjjjjjjjjjjjjjjjjjj
+
+
+
+
+
 
 
 
