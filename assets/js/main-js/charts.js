@@ -21,6 +21,7 @@ var myChart = new Chart(ctx, {
                 pointHitRadius: 30,
                 pointStyle: 'circle',
                 pointHoverBorderWidth: 2,
+                borderSkipped: false
 
             },
             {
@@ -30,7 +31,7 @@ var myChart = new Chart(ctx, {
                 label: "Writing",
                 borderWidth: 2,
                 fill: false,
-                backgroundColor: 'transparent',
+                backgroundColor: '#00AAFF',
                 hoverBackgroundColor: "#00AAFF",
                 tension: 0.4,
                 pointHoverBorderColor: 'white',
@@ -39,6 +40,7 @@ var myChart = new Chart(ctx, {
                 pointHitRadius: 30,
                 pointStyle: 'circle',
                 pointHoverBorderWidth: 2,
+                borderSkipped: false
 
             }
         ]
@@ -50,33 +52,15 @@ var myChart = new Chart(ctx, {
             mode: 'index',
         },
 
-        onHover: function (event, chartElement) {
-            var chart = chartElement[0]._chart;
-            var canvas = chart.canvas;
-            var chartArea = chart.chartArea;
-            var yPosition = event.clientY - canvas.offsetTop;
-
-            if (yPosition >= chartArea.top && yPosition <= chartArea.bottom) {
-                var x = chart.scales['x-axis-0'].getPixelForValue(chartElement[0]._model.x);
-
-                chart.drawVerticalLine(x);
-            }
-        },
-
-
         plugins: {
-            drawVerticalLine: {
-                lineWidth: 1,
-        color: 'rgba(0, 0, 0, 0.5)',
-        style: 'solid'
-            },
+                      
             legend: {
                 display: true,
                 position: 'top',
                 labels: {
                     boxWidth: 50,
                     usePointStyle: true,
-                    pointStyle: "line"
+                    pointStyle: "circle"
                 }
             }
         },
@@ -88,19 +72,19 @@ var myChart = new Chart(ctx, {
                 bottom: 10,
             },
         },
-        // elements: {
-        //     point: {
-        //         radius: 0,
-        //     },
-        // },
-        // tooltips: {
-        //     mode: 'index',
-        //     intersect: false,
-        // },
-        // hover: {
-        //     mode: 'nearest',
-        //     intersect: true
-        // },
+        elements: {
+            point: {
+                radius: 0,
+            },
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
 
 
         scales: {
@@ -113,14 +97,9 @@ var myChart = new Chart(ctx, {
                 grid: {
 
                     display: false,
-                    zeroLineWidth: 0,
-                    zeroLineColor: "transparent",
+                    borderColor: 'white',
                     borderWidth: 0,
-                    drawBorder: true,
-                    drawOnChartArea: true,
-                    drawTicks: true
-
-
+                    
                 },
                 ticks: {
                     beginAtZero: true,
@@ -139,15 +118,11 @@ var myChart = new Chart(ctx, {
                 stacked: false,
 
                 grid: {
-                    // zeroLineColor: "red",
-                    drawTicks: false,
-                    drawBorder: false,
-                    // zeroLineWidth: 0,
+                    display: true,
+                    color: '#FFF4FE',
+                    borderColor: 'white',
                     borderWidth: 0,
-                    color: 'transparent',
-                    opacity: 0.5,
-                    tickMarkLength: 0,
-
+                    
 
                 },
                 ticks: {
