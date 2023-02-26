@@ -37,7 +37,6 @@ var myChart = new Chart(ctx, {
                 pointStyle: 'circle',
                 pointHoverBorderWidth: 2,
             }
-
         ]
     },
     options: {
@@ -46,8 +45,8 @@ var myChart = new Chart(ctx, {
         interaction: {
             mode: 'index',
         },
-      
-    
+
+
         plugins: {
             legend: {
                 display: true,
@@ -59,6 +58,19 @@ var myChart = new Chart(ctx, {
                 }
             }
         },
+        layout: {
+            padding: {
+                left: -13,
+                right: -10,
+                top: 0,
+                bottom: 0,
+            },
+        },
+        elements: {
+            point: {
+                radius: 0,
+            },
+        },
         tooltips: {
             mode: 'index',
             intersect: false,
@@ -67,17 +79,29 @@ var myChart = new Chart(ctx, {
             mode: 'nearest',
             intersect: true
         },
+
+
         scales: {
             x: {
                 grid: {
+                    display: true,
                     color: "#ccc",
                     borderDash: [20, 4],
-                    borderColor: "black",
-                    tickColor: "black"
+                    borderColor: "transparent",
+                    tickColor: "transparent",
+                    z: 1,
+                    tickMarkLength: 6,
+                    drawTicks: true,
+                    drawBorder: false,
+
                 },
 
             },
             y: {
+                beginAtZero: true,
+                stacked: false,
+                min: 1,
+                max: 10,
                 grid: {
                     display: false
                 }
