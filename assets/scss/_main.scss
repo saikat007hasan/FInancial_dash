@@ -10,6 +10,13 @@
     --text: black;
     --sidebar-bg: #FAFAFA;
     --color-secondary: #29A073;
+        // cards
+    --icon-bg: #EBE8E8;
+    --icon-bg-hover: #4E5257;
+    --icon-color: #363A3F;
+    --card-hover-bg: #363A3F;
+    --cards-ico-color: #363A3F;
+
     --gray-2: #F8F8F8;
     --gray-3: #F5F5F5;
     --text-light: #FFFFFF;
@@ -17,6 +24,7 @@
     --gray-7: #363A3F;
     --color-dark: #000000;
     --scrollbarBG: #C8EE44;
+    --bg-card:#F8F8F8; 
     --thumbBG: rgba(114, 129, 146, 0.3);
     --color-bg-opacity: rgb(var(--color-primary-rgba), .10);
     --box-shadow-color-rgba: 146, 153, 184;
@@ -33,11 +41,19 @@
 
     --clr-fixed: black;
     --bg-main: #1C1A2E;
+    --bg-card:#201E34;
     --text-1: #FFFFFF;
     --text-2: #929EAE;
     --color-primary: #C8EE44;
     --text-light: #FFFFFF;
     --sidebar-bg: #1E1C30;
+        // cards
+    --icon-bg: #292642;
+    --icon-bg-hover: #353255;
+    --icon-color: #FFFFFF;
+    --card-hover-bg: #282541;
+    --cards-ico-color: #FFFFFF;
+
     --text-5: #1B212D;
     --dark-1: #201E34;
     --text-3: #78778B;

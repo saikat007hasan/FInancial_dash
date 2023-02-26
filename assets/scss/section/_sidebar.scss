@@ -109,15 +109,21 @@
         }
     }
 
-    .sidenav_link i {
-        color: var(--text);
-    }
+    // .sidenav_link i {
+    //     color: var(--text);
+    // }
 
     .bx {
         font-size: 22px;
         margin-right: -6px;
     }
 
+    .side-ico {
+        fill: var(--text-2);
+        min-height: 20px;
+        min-width: 20px;      
+    }
+    
     h3 {
         color: var(--text-2);
         font-weight: 500;
@@ -128,10 +134,9 @@
     }
 
     .sidenav_link:hover>h3,
-    .sidenav_link:hover>img {
+    .sidenav_link:hover>svg {
         fill: var(--clr-fixed);
         color: var(--clr-fixed);
-
         
     }
 
