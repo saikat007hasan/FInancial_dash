@@ -40,7 +40,7 @@
   <!-- Side-Nav -->
 
   <div class="layout layout__sidebar-wrapper has-sidebar fixed-header h-100">
-    <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+    <aside id="sidebar" class="sidebar break-point-sm break-point-lg has-bg-image">
 
       <a id="btn-collapse" class="sidebar sidebar-collapser btn-shadow-dark">
         <i class="bx bxs-chevrons-left"></i>
@@ -177,7 +177,7 @@
 
       <main class="main-content">
         <div>
-          <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+          <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm break-point-lg">
             <i class="ri-menu-line ri-xl"></i>
           </a>
           <!-- main-container -->
@@ -256,8 +256,13 @@
                 <!-- chart-js -->
                 <div class="row">
                   <div class="card-body p-3">
+                    <!-- <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                      <canvas id="areaChart"></canvas>
+                    </div> -->
+
+                    <canvas id="areaChart"></canvas>
+
                     <!-- <canvas id="barChart"></canvas> -->
-                    <canvas id="myChart"></canvas>
                   </div>
                 </div>
               </div>
@@ -277,7 +282,7 @@
   <script src="../assets/js/other-js/Chart.min.js"></script>
   <!-- <script src="https://cdn2.hubspot.net/hubfs/476360/utils.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
+  
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
